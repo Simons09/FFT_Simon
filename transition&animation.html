@@ -1,0 +1,262 @@
+<html> 
+ 
+<head> 
+ 
+    <title>Transitions and Animations</title> 
+ 
+    <style> 
+        button { 
+ 
+            margin-left: 130px; 
+            width: 100px; 
+            height: 50px; 
+            background-color: rgb(208, 114, 0); 
+            border: none; 
+            border-radius: 50px; 
+            transition: 1s; 
+        } 
+ 
+        button:hover { 
+ 
+            background-color: rgb(183, 209, 37); 
+            transform: scale(1.1); 
+        } 
+ 
+ 
+        .b1 { 
+            margin-left: 130px; 
+            width: 100px; 
+            height: 50px; 
+            background-color: rgb(203, 15, 166); 
+            border: none; 
+            border-radius: 3px; 
+            transition: 1s; 
+ 
+ 
+        } 
+ 
+        .b1:hover { 
+ 
+            background-color: rgb(168, 92, 240); 
+            transform: scale(1.1); 
+        } 
+ 
+        .b2 { 
+ 
+            margin-left: 130px; 
+            width: 100px; 
+            height: 50px; 
+            background-color: rgb(233, 214, 11); 
+            border: none; 
+            border-radius: 7px; 
+            transition: 1s; 
+ 
+        } 
+ 
+        .b2:hover { 
+ 
+            background-color: rgb(64, 62, 62); 
+            transform: scale(1.1); 
+        } 
+ 
+        .b3 { 
+ 
+            margin-left: 130px; 
+            width: 100px; 
+            height: 50px; 
+            background-color: rgb(0, 179, 255); 
+            border: none; 
+            border-radius: 70px; 
+            transition: 1s; 
+        } 
+ 
+        .b3:hover { 
+ 
+            background-color: rgb(54, 30, 0); 
+            transform: scale(); 
+        } 
+ 
+        .box { 
+ 
+            width: 100px; 
+            height: 100px; 
+            background-color: aqua; 
+            animation: Simon 1s ease alternate infinite; 
+ 
+        } 
+ 
+        .box2 { 
+            margin-left: 0px; 
+            width: 100px; 
+            height: 100px; 
+            background-color: rgb(252, 0, 168); 
+            border-radius: 100%; 
+            animation: hello 3s ease-out 2s alternate infinite; 
+        } 
+ 
+        .box3 { 
+            display: flex; 
+            width: 100px; 
+            margin-left: 0px; 
+            height: 100px; 
+            background-color: rgb(23, 2, 255); 
+            border-radius: 1%; 
+            animation: hi 0.5s ease-in-out 2s alternate infinite; 
+ 
+ 
+        } 
+ 
+        .box4 { 
+ 
+            display: flex; 
+            width: 100px; 
+            margin-left: 0px; 
+            height: 150px; 
+            background-color: rgb(7, 192, 118); 
+            border-radius: 1%; 
+            animation: bye 2s ease-in 2s alternate infinite; 
+ 
+ 
+        } 
+ 
+        .load { 
+            margin-left: 0px; 
+            margin-bottom: 80px; 
+            width: 100px; 
+            height: 100px; 
+            border: 5px solid gray; 
+            border-radius: 50%; 
+            border-top: solid rgb(198, 181, 0); 
+            animation: spin 1s linear infinite; 
+        } 
+ 
+        .load1 { 
+            margin-left: 0px; 
+            margin-bottom: 80px; 
+            width: 100px; 
+            height: 100px; 
+            border: 10px solid rgb(186, 70, 161); 
+            border-radius: 1%; 
+            border-top: solid rgb(213, 215, 57); 
+            animation: spin1 1s linear infinite; 
+        } 
+ 
+        .load2 { 
+            margin-left: 0px; 
+            margin-bottom: 80px; 
+            width: 100px; 
+            height: 100px; 
+            border: 10px solid rgb(30, 100, 229); 
+            border-radius: 100px; 
+            border-top: solid rgb(9, 9, 0); 
+            animation: spin2 1s linear infinite; 
+ 
+ 
+        } 
+ 
+        @keyframes spin2 { 
+ 
+ 
+            to { 
+ 
+                transform: rotate(360deg); 
+            } 
+ 
+        } 
+ 
+        @keyframes spin1 { 
+ 
+            to { 
+ 
+                transform: rotate(360deg); 
+            } 
+        } 
+ 
+ 
+ 
+ 
+ 
+        @keyframes spin { 
+            to { 
+                transform: rotate(360deg); 
+            } 
+        } 
+ 
+        @keyframes bye { 
+ 
+            to { 
+ 
+                transform: rotate(360deg); 
+            } 
+        } 
+ 
+        @keyframes hi { 
+ 
+            to { 
+ 
+                transform: rotate(90deg); 
+            } 
+ 
+ 
+ 
+        } 
+ 
+        @keyframes hello { 
+ 
+            to { 
+ 
+                transform: scale(0); 
+            } 
+        } 
+ 
+ 
+        @keyframes nikhil { 
+ 
+            to { 
+ 
+                transform: scale(0); 
+            } 
+ 
+            from { 
+ 
+                transform: scale(300px); 
+            } 
+        } 
+    </style> 
+</head> 
+ 
+<body> 
+ 
+    <h1>Transitions & Animations</h1> 
+    <button class="b1">Bajaj</button> 
+    <button class="b2"> Simon</button> 
+    <button class="b3">Shegu</button> 
+    <button class="b4">Vishwa</button> 
+    <br><br> 
+    <br><br> 
+ 
+    <ul> 
+        <div class="box"></div><br> 
+        <br><br> 
+        <br><br> 
+        <br> 
+        <div class="box2"></div> 
+        <br><br><br><br><br> 
+        <div class="box3"></div> 
+        <br><br><br><br><br> 
+        <div class="box4"></div> 
+        <br><br><br><br><br> 
+ 
+    </ul> 
+    <br><br><br><br> 
+    <div class="load"></div> 
+    <br><br> 
+    <div class="load1"></div> 
+    <br><br> 
+    <div class="load2"></div> 
+ 
+ 
+</body> 
+ 
+</html>
+```
